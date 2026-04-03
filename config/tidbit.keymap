@@ -8,12 +8,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-/{
+
     &kscan0{
     diode-direction = "col2row";
     };
 
     &default_transform {
+    /delete-property/ map;
     map = <
         // 新映射：将第一行第一个键与第二个键交换位置
         RC(0,0) RC(0,1) RC(0,2) RC(0,3)
@@ -23,7 +24,7 @@
                 RC(4,1) RC(4,2) RC(4,3)
     >;
     };
-};
+
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
 /*
 &encoder_1 {
