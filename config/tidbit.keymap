@@ -11,7 +11,7 @@
 
  &kscan0{
     diode-direction = "col2row";
- }
+ };
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
 /*
 &encoder_1 {
