@@ -51,8 +51,8 @@
 
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
-    sensors = <>;
-    status = "disable";
+    sensors = <&encoder_4>;
+//    status = "disable";
 };
 
 / {
